@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+/* Responsive scaling utilities */
+@layer utilities {
+  .scale-text {
+    font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+  }
+  
+  .scale-text-sm {
+    font-size: clamp(0.625rem, 2vw, 1rem);
+  }
+  
+  .scale-text-lg {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+  
+  .scale-text-xl {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+  }
+  
+  .scale-text-2xl {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+  
+  .scale-p {
+    padding: clamp(1rem, 3vw, 1.5rem);
+  }
+  
+  .scale-px {
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+  }
+  
+  .scale-py {
+    padding-top: clamp(0.5rem, 1.5vw, 1rem);
+    padding-bottom: clamp(0.5rem, 1.5vw, 1rem);
+  }
+  
+  .scale-mx {
+    margin-left: clamp(1rem, 3vw, 1.5rem);
+    margin-right: clamp(1rem, 3vw, 1.5rem);
+  }
+  
+  .scale-my {
+    margin-top: clamp(0.5rem, 1.5vw, 1rem);
+    margin-bottom: clamp(0.5rem, 1.5vw, 1rem);
+  }
+  
+  .scale-gap {
+    gap: clamp(0.75rem, 2vw, 1.25rem);
+  }
+  
+  .scale-h {
+    height: clamp(2rem, 6vw, 3rem);
+  }
+  
+  .scale-w {
+    width: clamp(8rem, 20vw, 12rem);
+  }
+  
+  .scale-w-full {
+    width: clamp(16rem, 40vw, 24rem);
+  }
+  
+  .scale-button {
+    @apply scale-px scale-py rounded-lg font-medium transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+  
+  .scale-card {
+    @apply bg-white rounded-xl shadow-lg scale-p border border-gray-200;
+  }
+  
+  .scale-input {
+    @apply scale-px scale-py rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200;
+  }
+}
+
+/* Flutter-specific responsive classes */
+.flutter-responsive {
+  @apply w-full h-screen overflow-hidden;
+}
+
+.flutter-container {
+  @apply max-w-md mx-auto scale-p;
+}
+
+.flutter-flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flutter-flex-between {
+  @apply flex items-center justify-between;
+}
+
+.flutter-text-primary {
+  @apply text-primary-600 font-semibold;
+}
+
+.flutter-text-secondary {
+  @apply text-gray-600;
+}
+
+.flutter-bg-primary {
+  @apply bg-primary-500 text-white;
+}
+
+.flutter-bg-secondary {
+  @apply bg-gray-100 text-gray-800;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .dark {
+    @apply bg-gray-900 text-gray-100;
+  }
+  
+  .dark .scale-card {
+    @apply bg-gray-800 border-gray-700;
+  }
+  
+  .dark .scale-input {
+    @apply border-gray-600 bg-gray-800 text-gray-100;
+  }
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
