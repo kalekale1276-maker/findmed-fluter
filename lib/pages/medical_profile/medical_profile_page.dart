@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../core/utils/tailwind_extensions.dart';
 import '../../../../services/auth.dart';
 import '../models/medical_profile_models.dart';
 import '../services/medical_profile_services.dart';
@@ -29,13 +30,12 @@ class _MedicalProfilePageState extends State<MedicalProfilePage> with TickerProv
   final FocusNode _medicationsFocus = FocusNode();
   
   // State
-  MedicalProfileState _state = const MedicalProfileState(
-    profile: MedicalProfile.empty(),
-  );
+  late MedicalProfileState _state;
 
   @override
   void initState() {
     super.initState();
+    _state = MedicalProfileState(profile: MedicalProfile.empty());
     _initializeAnimations();
     _initializeData();
   }
@@ -214,7 +214,7 @@ class _MedicalProfilePageState extends State<MedicalProfilePage> with TickerProv
       ),
     );
     
-    if (!confirmed) return;
+    if (confirmed != true) return;
     
     _setSaving(true);
     

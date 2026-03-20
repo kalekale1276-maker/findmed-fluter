@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../core/utils/tailwind_extensions.dart';
 import 'models/booking_list_models.dart';
 import 'services/booking_list_services.dart';
 import 'widgets/booking_list_widgets.dart';

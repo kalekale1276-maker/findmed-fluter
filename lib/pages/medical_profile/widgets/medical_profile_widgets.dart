@@ -620,11 +620,21 @@ class MedicalProfileWidgets {
       margin: EdgeInsets.symmetric(vertical: 16.h),
       height: 1.h,
       color: Get.context!.isDarkMode ? TailwindColors.gray700 : TailwindColors.gray200,
-    );
+  );
   }
-}
 
-/// Helper class to get context
+  /// Set context for use in static methods
+  static void setContext(BuildContext context) {
+    Get.setContext(context);
+  }
+
+  /// Clear context when widget is disposed
+  static void clearContext() {
+    Get.clearContext();
+  }
+  }
+  
+  /// Helper class to get context
 class Get {
   static BuildContext? _context;
   

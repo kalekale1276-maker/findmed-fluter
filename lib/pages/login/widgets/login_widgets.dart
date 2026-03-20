@@ -616,6 +616,16 @@ class LoginWidgets {
       color: Get.context!.isDarkMode ? TailwindColors.gray700 : TailwindColors.gray200,
     );
   }
+
+  /// Set context for use in static methods
+  static void setContext(BuildContext context) {
+    Get.setContext(context);
+  }
+
+  /// Clear context when widget is disposed
+  static void clearContext() {
+    Get.clearContext();
+  }
 }
 
 /// Helper class to get context

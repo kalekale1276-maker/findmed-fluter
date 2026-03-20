@@ -406,7 +406,7 @@ class MedicalProfileResult {
     this.profile,
   });
 
-  factory MedicalProfile.success({
+  factory MedicalProfileResult.success({
     String? message,
     MedicalProfile? profile,
   }) {
@@ -417,7 +417,7 @@ class MedicalProfileResult {
     );
   }
 
-  factory MedicalProfile.failure(String message) {
+  factory MedicalProfileResult.failure(String message) {
     return MedicalProfileResult(
       success: false,
       message: message,

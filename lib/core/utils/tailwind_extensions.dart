@@ -92,6 +92,17 @@ class TailwindColors {
   static const Color gray800 = Color(0xFF1f2937);
   static const Color gray900 = Color(0xFF111827);
   
+  static const Color green50 = Color(0xFFf0fdf4);
+  static const Color green100 = Color(0xFFdcfce7);
+  static const Color green200 = Color(0xFFbbf7d0);
+  static const Color green300 = Color(0xFF86efac);
+  static const Color green400 = Color(0xFF4ade80);
+  static const Color green500 = Color(0xFF22c55e);
+  static const Color green600 = Color(0xFF16a34a);
+  static const Color green700 = Color(0xFF15803d);
+  static const Color green800 = Color(0xFF166534);
+  static const Color green900 = Color(0xFF14532d);
+  
   static const Color red50 = Color(0xFFfef2f2);
   static const Color red100 = Color(0xFFfee2e2);
   static const Color red200 = Color(0xFFfecaca);

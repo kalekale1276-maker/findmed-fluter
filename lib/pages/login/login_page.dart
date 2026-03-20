@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../core/utils/tailwind_extensions.dart';
 import 'models/login_models.dart';
 import 'services/login_services.dart';
 import 'widgets/login_widgets.dart';
