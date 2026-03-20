@@ -25,9 +25,9 @@ import 'package:findmed/widgets/top_notification.dart';
 import '../../../core/utils/tailwind_extensions.dart';
 import '../medical_profile/medical_profile_page.dart';
 import '../favorites/favorites_page.dart';
-import '../models/profile_models.dart';
-import '../services/profile_services.dart';
-import '../widgets/profile_widgets.dart';
+import './models/profile_models.dart';
+import './services/profile_services.dart';
+import './widgets/profile_widgets.dart';
 
 /// Profile Page - User profile management
 class ProfilePage extends StatefulWidget {

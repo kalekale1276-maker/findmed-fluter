@@ -1,3 +1,6 @@
+/// Import required icons
+import 'package:flutter/material.dart';
+
 /// Models and constants for login functionality
 class LoginConstants {
   // UI labels
@@ -387,6 +390,3 @@ class LoginAnalytics {
     return providerUsage.entries.reduce((a, b) => a.value > b.value ? a : b).key;
   }
 }
-
-/// Import required icons
-import 'package:flutter/material.dart';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../models/feedback_models.dart';
-import '../services/feedback_services.dart';
-import '../widgets/feedback_widgets.dart';
+import './models/feedback_models.dart';
+import './services/feedback_services.dart';
+import './widgets/feedback_widgets.dart';
 
 /// Feedback Page - User feedback submission
 class FeedbackPage extends StatefulWidget {

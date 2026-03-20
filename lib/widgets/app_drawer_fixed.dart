@@ -10,7 +10,7 @@ import '../pages/about/about_page.dart';
 import '../pages/chat/chat_page.dart';
 import '../pages/booking_list/booking_list_page.dart';
 import '../pages/login/login_page.dart';
-import '../pages/register/register_page.dart';
+import '../pages/login/login_page.dart';
 import '../services/app_config.dart';
 
 /// App Drawer - Navigation drawer with proper routing

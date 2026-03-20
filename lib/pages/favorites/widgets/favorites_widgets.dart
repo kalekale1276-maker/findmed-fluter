@@ -184,6 +184,7 @@ class FavoritesWidgets {
       ),
     );
   }
+  }
 
   /// Build sort menu
   static Widget buildSortMenu({

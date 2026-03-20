@@ -20,10 +20,10 @@ import '../home/facility_search_delegate.dart';
 import '../home/filter_modal.dart';
 import '../feedback/feedback_page.dart';
 import '../../../widgets/app_drawer.dart';
-import '../../map/map.dart';
-import '../../favorites/favorites.dart';
-import '../../notifications/notifications_page.dart';
-import '../../emergency/emergency_page.dart';
+import '../map/map_page.dart';
+import '../favorites/favorites_page.dart';
+import '../notifications/notifications_page.dart';
+import '../emergency/emergency_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
