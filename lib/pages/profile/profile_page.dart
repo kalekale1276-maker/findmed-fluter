@@ -520,7 +520,3 @@ class _ProfilePageState extends State<ProfilePage> with TickerProviderStateMixin
     );
   }
 }
-
-// Import required pages
-import '../medical_profile/medical_profile_page.dart';
-import '../favorites/favorites_page.dart';

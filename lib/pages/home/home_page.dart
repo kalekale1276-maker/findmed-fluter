@@ -19,7 +19,7 @@ import '../home/facility_detail_page.dart';
 import '../home/facility_search_delegate.dart';
 import '../home/filter_modal.dart';
 import '../feedback/feedback_page.dart';
-import '../../../widgets/app_drawer.dart';
+import '../../widgets/app_drawer.dart';
 import '../map/map_page.dart';
 import '../favorites/favorites_page.dart';
 import '../notifications/notifications_page.dart';
