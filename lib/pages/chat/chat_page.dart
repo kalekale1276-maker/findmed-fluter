@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../core/utils/tailwind_extensions.dart';
 import 'models/chat_models.dart';
 import 'services/chat_services.dart';
 import 'widgets/chat_widgets.dart';

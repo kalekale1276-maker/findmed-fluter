@@ -499,6 +499,16 @@ class ChatWidgets {
       backgroundColor: Get.context!.isDarkMode ? TailwindColors.gray800 : Colors.white,
     );
   }
+
+  /// Set context for use in static methods
+  static void setContext(BuildContext context) {
+    Get.setContext(context);
+  }
+
+  /// Clear context when widget is disposed
+  static void clearContext() {
+    Get.clearContext();
+  }
 }
 
 /// Helper class to get context

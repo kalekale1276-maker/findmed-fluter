@@ -180,7 +180,7 @@ class BookingListFilter {
   final DateTime? endDate;
   final String? facilityId;
 
-  BookingListFilter({
+  const BookingListFilter({
     this.status,
     this.startDate,
     this.endDate,

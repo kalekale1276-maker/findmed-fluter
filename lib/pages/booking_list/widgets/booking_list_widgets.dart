@@ -471,6 +471,16 @@ class BookingListWidgets {
   static Widget buildSpacing({double height = 16}) {
     return SizedBox(height: height.h);
   }
+
+  /// Set context for use in static methods
+  static void setContext(BuildContext context) {
+    Get.setContext(context);
+  }
+
+  /// Clear context when widget is disposed
+  static void clearContext() {
+    Get.clearContext();
+  }
 }
 
 /// Helper class to get context
